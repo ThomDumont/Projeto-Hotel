@@ -17,6 +17,9 @@ class Cadastrado{
 
     public:
 
+        Cadastrado() : Nome(""), Cpf(0), Telefone(0), DataNasc(0), CheckIn(""), CheckOut(""){
+
+        }
 
         string getNome() const;
         void setNome(const string &value);
