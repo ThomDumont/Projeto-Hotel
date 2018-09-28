@@ -33,7 +33,11 @@ HEADERS += \
     cadastrado.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    busca.ui \
+    remove-atualiza.ui \
+    comfirma-remove.ui \
+    atualiza.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
