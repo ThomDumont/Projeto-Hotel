@@ -2,6 +2,7 @@
 #define CADASTRADO_H
 #include <iostream.>
 #include <string>
+#include <iostream>
 
 class Cadastrado{
 

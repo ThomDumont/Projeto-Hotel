@@ -29,8 +29,10 @@ SOURCES += \
         mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h \
-    cadastrado.h
+    cadastrado.hpp \
+    les.hpp \
+    mainwindow.hpp \
+    filac.hpp
 
 FORMS += \
         mainwindow.ui \

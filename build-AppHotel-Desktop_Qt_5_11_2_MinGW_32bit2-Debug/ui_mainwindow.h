@@ -45,7 +45,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(339, 441);
+        MainWindow->resize(339, 415);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         lblNome = new QLabel(centralWidget);
@@ -86,7 +86,7 @@ public:
         lblChout->setGeometry(QRect(30, 290, 47, 13));
         btnCadastrar = new QPushButton(centralWidget);
         btnCadastrar->setObjectName(QStringLiteral("btnCadastrar"));
-        btnCadastrar->setGeometry(QRect(120, 370, 75, 23));
+        btnCadastrar->setGeometry(QRect(130, 360, 75, 23));
         MainWindow->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
