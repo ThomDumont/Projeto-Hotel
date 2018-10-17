@@ -6,8 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< Updated upstream
     <width>339</width>
     <height>415</height>
+=======
+    <width>331</width>
+    <height>455</height>
+>>>>>>> Stashed changes
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +22,11 @@
    <widget class="QLabel" name="lblNome">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>30</x>
+=======
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>30</y>
       <width>47</width>
       <height>13</height>
@@ -27,6 +36,7 @@
      <string>Nome:</string>
     </property>
    </widget>
+<<<<<<< Updated upstream
    <widget class="QPlainTextEdit" name="textEditNome">
     <property name="geometry">
      <rect>
@@ -41,16 +51,32 @@
     <property name="geometry">
      <rect>
       <x>30</x>
+=======
+   <widget class="QPlainTextEdit" name="textEditCpf">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>100</y>
       <width>291</width>
       <height>24</height>
      </rect>
     </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="tabStopWidth">
+     <number>1</number>
+    </property>
    </widget>
    <widget class="QLabel" name="lblCpf">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>30</x>
+=======
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>80</y>
       <width>31</width>
       <height>16</height>
@@ -63,7 +89,11 @@
    <widget class="QLabel" name="lblTel">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>30</x>
+=======
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>130</y>
       <width>47</width>
       <height>13</height>
@@ -76,17 +106,31 @@
    <widget class="QPlainTextEdit" name="textEditTel">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>30</x>
+=======
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>150</y>
       <width>231</width>
       <height>24</height>
      </rect>
     </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="tabStopWidth">
+     <number>1</number>
+    </property>
    </widget>
    <widget class="QLabel" name="lblDatanasci">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>30</x>
+=======
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>180</y>
       <width>111</width>
       <height>16</height>
@@ -99,7 +143,11 @@
    <widget class="QDateEdit" name="dateNasci">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>30</x>
+=======
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>200</y>
       <width>110</width>
       <height>22</height>
@@ -109,7 +157,11 @@
    <widget class="QDateTimeEdit" name="dateTimeChin">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>30</x>
+=======
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>250</y>
       <width>194</width>
       <height>22</height>
@@ -119,7 +171,11 @@
    <widget class="QDateTimeEdit" name="dateTimeChout">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>30</x>
+=======
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>310</y>
       <width>194</width>
       <height>22</height>
@@ -129,7 +185,11 @@
    <widget class="QLabel" name="lblChin">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>30</x>
+=======
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>230</y>
       <width>47</width>
       <height>13</height>
@@ -142,7 +202,11 @@
    <widget class="QLabel" name="lblChout">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>30</x>
+=======
+      <x>20</x>
+>>>>>>> Stashed changes
       <y>290</y>
       <width>47</width>
       <height>13</height>
@@ -155,8 +219,13 @@
    <widget class="QPushButton" name="btnCadastrar">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>130</x>
       <y>360</y>
+=======
+      <x>140</x>
+      <y>380</y>
+>>>>>>> Stashed changes
       <width>75</width>
       <height>23</height>
      </rect>
@@ -165,6 +234,22 @@
      <string>Cadastrar</string>
     </property>
    </widget>
+<<<<<<< Updated upstream
+=======
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+>>>>>>> Stashed changes
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
