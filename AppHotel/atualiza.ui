@@ -102,7 +102,7 @@
     <string>Check-in</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btnCadastrar">
+  <widget class="QPushButton" name="btnAtualizar">
    <property name="geometry">
     <rect>
      <x>120</x>

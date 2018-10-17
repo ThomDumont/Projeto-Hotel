@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btnBuscar">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -26,7 +26,7 @@
     <string>Buscar</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -44,11 +44,11 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QTextBrowser" name="textBrowser"/>
+     <widget class="QTextBrowser" name="txtResultado"/>
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -66,28 +66,28 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QRadioButton" name="radioButton">
+     <widget class="QRadioButton" name="radNome">
       <property name="text">
        <string>Nome</string>
       </property>
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="QRadioButton" name="radioButton_2">
+     <widget class="QRadioButton" name="radCpf">
       <property name="text">
        <string>CPF</string>
       </property>
      </widget>
     </item>
     <item row="3" column="0">
-     <widget class="QRadioButton" name="radioButton_3">
+     <widget class="QRadioButton" name="radTel">
       <property name="text">
        <string>Telefone</string>
       </property>
      </widget>
     </item>
     <item row="4" column="0">
-     <widget class="QRadioButton" name="radioButton_4">
+     <widget class="QRadioButton" name="radDatanasc">
       <property name="text">
        <string>Data de Nascimento</string>
       </property>
@@ -101,7 +101,7 @@
      </widget>
     </item>
     <item row="6" column="0">
-     <widget class="QPlainTextEdit" name="plainTextEdit">
+     <widget class="QPlainTextEdit" name="txtCriterio">
       <property name="minimumSize">
        <size>
         <width>0</width>

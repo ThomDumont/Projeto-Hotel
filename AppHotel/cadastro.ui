@@ -26,7 +26,7 @@
     <string>Telefone:</string>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="textEditCpf">
+  <widget class="QPlainTextEdit" name="txtCpf">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -95,7 +95,7 @@
     <string>Data de Nascimento</string>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="textEditTel">
+  <widget class="QPlainTextEdit" name="txtTel">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -154,7 +154,7 @@
     <string>Nome:</string>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="textEditNome">
+  <widget class="QPlainTextEdit" name="txtNome">
    <property name="geometry">
     <rect>
      <x>0</x>

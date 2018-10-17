@@ -26,7 +26,7 @@
     <string>Você tem certeza que quer remover o cadastrado:</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btnS">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -39,7 +39,7 @@
     <string>Sim</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="btnN">
    <property name="geometry">
     <rect>
      <x>140</x>

@@ -31,28 +31,28 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QRadioButton" name="radioButton_5">
+     <widget class="QRadioButton" name="radNomeRA">
       <property name="text">
        <string>Nome</string>
       </property>
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="QRadioButton" name="radioButton_6">
+     <widget class="QRadioButton" name="radCpfRA">
       <property name="text">
        <string>CPF</string>
       </property>
      </widget>
     </item>
     <item row="3" column="0">
-     <widget class="QRadioButton" name="radioButton_7">
+     <widget class="QRadioButton" name="radTelRA">
       <property name="text">
        <string>Telefone</string>
       </property>
      </widget>
     </item>
     <item row="4" column="0">
-     <widget class="QRadioButton" name="radioButton_8">
+     <widget class="QRadioButton" name="radDatanascRA">
       <property name="text">
        <string>Data de Nascimento</string>
       </property>
@@ -66,7 +66,7 @@
      </widget>
     </item>
     <item row="6" column="0">
-     <widget class="QPlainTextEdit" name="plainTextEdit_2">
+     <widget class="QPlainTextEdit" name="txtCriterioRA">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -101,11 +101,11 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QTextBrowser" name="textBrowser_2"/>
+     <widget class="QTextBrowser" name="txtResultadoRA"/>
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btnBuscarRA">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -131,7 +131,7 @@
     <string>Qual operação deseja fazer:</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="btnAtualizarRA">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -144,7 +144,7 @@
     <string>Atualizar cadastro</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="btnRemoverRA">
    <property name="geometry">
     <rect>
      <x>150</x>

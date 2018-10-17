@@ -27,7 +27,7 @@
      <string>Login</string>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="textEditNome">
+   <widget class="QPlainTextEdit" name="txtLogin">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -37,7 +37,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="textEditCpf">
+   <widget class="QPlainTextEdit" name="txtSenha">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -60,7 +60,7 @@
      <string>Senha</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnCadastrar">
+   <widget class="QPushButton" name="btnEntrar">
     <property name="geometry">
      <rect>
       <x>130</x>
