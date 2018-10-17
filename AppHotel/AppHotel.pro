@@ -39,7 +39,10 @@ FORMS += \
     busca.ui \
     remove-atualiza.ui \
     comfirma-remove.ui \
-    atualiza.ui
+    atualiza.ui \
+    servicoquarto.ui \
+    cadastro.ui \
+    menu.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
