@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QDialog>
 #include <QtWidgets/QFormLayout>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
@@ -22,114 +23,114 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_Form
+class Ui_busca
 {
 public:
-    QPushButton *pushButton;
-    QWidget *widget;
-    QGridLayout *gridLayout;
-    QLabel *label_3;
-    QTextBrowser *textBrowser;
-    QWidget *widget1;
+    QWidget *layoutWidget;
     QFormLayout *formLayout;
     QLabel *label;
-    QRadioButton *radioButton;
-    QRadioButton *radioButton_2;
-    QRadioButton *radioButton_3;
-    QRadioButton *radioButton_4;
+    QRadioButton *radNome;
+    QRadioButton *radCpf;
+    QRadioButton *radTel;
+    QRadioButton *radDatanasc;
     QLabel *label_2;
-    QPlainTextEdit *plainTextEdit;
+    QPlainTextEdit *txtCriterio;
+    QWidget *layoutWidget_2;
+    QGridLayout *gridLayout;
+    QLabel *label_3;
+    QTextBrowser *txtResultado;
+    QPushButton *btnBuscar;
 
-    void setupUi(QWidget *Form)
+    void setupUi(QDialog *busca)
     {
-        if (Form->objectName().isEmpty())
-            Form->setObjectName(QStringLiteral("Form"));
-        Form->resize(285, 446);
-        pushButton = new QPushButton(Form);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(100, 190, 80, 21));
-        widget = new QWidget(Form);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(10, 220, 261, 213));
-        gridLayout = new QGridLayout(widget);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        gridLayout->setContentsMargins(0, 0, 0, 0);
-        label_3 = new QLabel(widget);
-        label_3->setObjectName(QStringLiteral("label_3"));
-
-        gridLayout->addWidget(label_3, 0, 0, 1, 1);
-
-        textBrowser = new QTextBrowser(widget);
-        textBrowser->setObjectName(QStringLiteral("textBrowser"));
-
-        gridLayout->addWidget(textBrowser, 1, 0, 1, 1);
-
-        widget1 = new QWidget(Form);
-        widget1->setObjectName(QStringLiteral("widget1"));
-        widget1->setGeometry(QRect(10, 20, 264, 164));
-        formLayout = new QFormLayout(widget1);
+        if (busca->objectName().isEmpty())
+            busca->setObjectName(QStringLiteral("busca"));
+        busca->resize(290, 441);
+        layoutWidget = new QWidget(busca);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 10, 264, 164));
+        formLayout = new QFormLayout(layoutWidget);
         formLayout->setObjectName(QStringLiteral("formLayout"));
         formLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget1);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QStringLiteral("label"));
 
         formLayout->setWidget(0, QFormLayout::LabelRole, label);
 
-        radioButton = new QRadioButton(widget1);
-        radioButton->setObjectName(QStringLiteral("radioButton"));
+        radNome = new QRadioButton(layoutWidget);
+        radNome->setObjectName(QStringLiteral("radNome"));
 
-        formLayout->setWidget(1, QFormLayout::LabelRole, radioButton);
+        formLayout->setWidget(1, QFormLayout::LabelRole, radNome);
 
-        radioButton_2 = new QRadioButton(widget1);
-        radioButton_2->setObjectName(QStringLiteral("radioButton_2"));
+        radCpf = new QRadioButton(layoutWidget);
+        radCpf->setObjectName(QStringLiteral("radCpf"));
 
-        formLayout->setWidget(2, QFormLayout::LabelRole, radioButton_2);
+        formLayout->setWidget(2, QFormLayout::LabelRole, radCpf);
 
-        radioButton_3 = new QRadioButton(widget1);
-        radioButton_3->setObjectName(QStringLiteral("radioButton_3"));
+        radTel = new QRadioButton(layoutWidget);
+        radTel->setObjectName(QStringLiteral("radTel"));
 
-        formLayout->setWidget(3, QFormLayout::LabelRole, radioButton_3);
+        formLayout->setWidget(3, QFormLayout::LabelRole, radTel);
 
-        radioButton_4 = new QRadioButton(widget1);
-        radioButton_4->setObjectName(QStringLiteral("radioButton_4"));
+        radDatanasc = new QRadioButton(layoutWidget);
+        radDatanasc->setObjectName(QStringLiteral("radDatanasc"));
 
-        formLayout->setWidget(4, QFormLayout::LabelRole, radioButton_4);
+        formLayout->setWidget(4, QFormLayout::LabelRole, radDatanasc);
 
-        label_2 = new QLabel(widget1);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
 
         formLayout->setWidget(5, QFormLayout::LabelRole, label_2);
 
-        plainTextEdit = new QPlainTextEdit(widget1);
-        plainTextEdit->setObjectName(QStringLiteral("plainTextEdit"));
-        plainTextEdit->setMinimumSize(QSize(0, 24));
-        plainTextEdit->setMaximumSize(QSize(16777215, 24));
+        txtCriterio = new QPlainTextEdit(layoutWidget);
+        txtCriterio->setObjectName(QStringLiteral("txtCriterio"));
+        txtCriterio->setMinimumSize(QSize(0, 24));
+        txtCriterio->setMaximumSize(QSize(16777215, 24));
 
-        formLayout->setWidget(6, QFormLayout::LabelRole, plainTextEdit);
+        formLayout->setWidget(6, QFormLayout::LabelRole, txtCriterio);
 
+        layoutWidget_2 = new QWidget(busca);
+        layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
+        layoutWidget_2->setGeometry(QRect(10, 210, 261, 213));
+        gridLayout = new QGridLayout(layoutWidget_2);
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        label_3 = new QLabel(layoutWidget_2);
+        label_3->setObjectName(QStringLiteral("label_3"));
 
-        retranslateUi(Form);
+        gridLayout->addWidget(label_3, 0, 0, 1, 1);
 
-        QMetaObject::connectSlotsByName(Form);
+        txtResultado = new QTextBrowser(layoutWidget_2);
+        txtResultado->setObjectName(QStringLiteral("txtResultado"));
+
+        gridLayout->addWidget(txtResultado, 1, 0, 1, 1);
+
+        btnBuscar = new QPushButton(busca);
+        btnBuscar->setObjectName(QStringLiteral("btnBuscar"));
+        btnBuscar->setGeometry(QRect(100, 180, 80, 21));
+
+        retranslateUi(busca);
+
+        QMetaObject::connectSlotsByName(busca);
     } // setupUi
 
-    void retranslateUi(QWidget *Form)
+    void retranslateUi(QDialog *busca)
     {
-        Form->setWindowTitle(QApplication::translate("Form", "Form", nullptr));
-        pushButton->setText(QApplication::translate("Form", "Buscar", nullptr));
-        label_3->setText(QApplication::translate("Form", "Resultado Encontrado:", nullptr));
-        label->setText(QApplication::translate("Form", "Deseja pesquisar por:", nullptr));
-        radioButton->setText(QApplication::translate("Form", "Nome", nullptr));
-        radioButton_2->setText(QApplication::translate("Form", "CPF", nullptr));
-        radioButton_3->setText(QApplication::translate("Form", "Telefone", nullptr));
-        radioButton_4->setText(QApplication::translate("Form", "Data de Nascimento", nullptr));
-        label_2->setText(QApplication::translate("Form", "Digite o crit\303\251rio da pesquisa:", nullptr));
+        busca->setWindowTitle(QApplication::translate("busca", "Dialog", nullptr));
+        label->setText(QApplication::translate("busca", "Deseja pesquisar por:", nullptr));
+        radNome->setText(QApplication::translate("busca", "Nome", nullptr));
+        radCpf->setText(QApplication::translate("busca", "CPF", nullptr));
+        radTel->setText(QApplication::translate("busca", "Telefone", nullptr));
+        radDatanasc->setText(QApplication::translate("busca", "Data de Nascimento", nullptr));
+        label_2->setText(QApplication::translate("busca", "Digite o crit\303\251rio da pesquisa:", nullptr));
+        label_3->setText(QApplication::translate("busca", "Resultado Encontrado:", nullptr));
+        btnBuscar->setText(QApplication::translate("busca", "Buscar", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class Form: public Ui_Form {};
+    class busca: public Ui_busca {};
 } // namespace Ui
 
 QT_END_NAMESPACE

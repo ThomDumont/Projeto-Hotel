@@ -1,5 +1,6 @@
 #include "mainwindow.hpp"
 #include "ui_mainwindow.h"
+#include "menu.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -9,4 +10,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow(){
     delete ui;
+}
+
+void MainWindow::on_btnEntrar_clicked(){
+    hide();
+    menu *x = new menu(this);
+    x->show();
 }

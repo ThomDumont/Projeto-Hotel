@@ -21,8 +21,8 @@ class Ui_Form
 {
 public:
     QLabel *label;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QPushButton *btnS;
+    QPushButton *btnN;
 
     void setupUi(QWidget *Form)
     {
@@ -32,12 +32,12 @@ public:
         label = new QLabel(Form);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(20, 10, 251, 16));
-        pushButton = new QPushButton(Form);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(50, 40, 80, 21));
-        pushButton_2 = new QPushButton(Form);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(140, 40, 80, 21));
+        btnS = new QPushButton(Form);
+        btnS->setObjectName(QStringLiteral("btnS"));
+        btnS->setGeometry(QRect(50, 40, 80, 21));
+        btnN = new QPushButton(Form);
+        btnN->setObjectName(QStringLiteral("btnN"));
+        btnN->setGeometry(QRect(140, 40, 80, 21));
 
         retranslateUi(Form);
 
@@ -48,8 +48,8 @@ public:
     {
         Form->setWindowTitle(QApplication::translate("Form", "Form", nullptr));
         label->setText(QApplication::translate("Form", "Voc\303\252 tem certeza que quer remover o cadastrado:", nullptr));
-        pushButton->setText(QApplication::translate("Form", "Sim", nullptr));
-        pushButton_2->setText(QApplication::translate("Form", "N\303\243o", nullptr));
+        btnS->setText(QApplication::translate("Form", "Sim", nullptr));
+        btnN->setText(QApplication::translate("Form", "N\303\243o", nullptr));
     } // retranslateUi
 
 };

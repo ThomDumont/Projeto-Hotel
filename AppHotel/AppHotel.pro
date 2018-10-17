@@ -26,23 +26,37 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    menu.cpp \
+    cadastro.cpp \
+    servicoquarto.cpp \
+    remove_atualiza.cpp \
+    busca.cpp \
+    atualiza.cpp \
+    confirma_remove.cpp
 
 HEADERS += \
     cadastrado.hpp \
     les.hpp \
     mainwindow.hpp \
-    filac.hpp
+    filac.hpp \
+    menu.hpp \
+    cadastro.hpp \
+    servicoquarto.hpp \
+    remove_atualiza.hpp \
+    busca.hpp \
+    atualiza.hpp \
+    confirma_remove.hpp
 
 FORMS += \
         mainwindow.ui \
-    busca.ui \
-    remove-atualiza.ui \
-    comfirma-remove.ui \
-    atualiza.ui \
-    servicoquarto.ui \
+    menu.ui \
     cadastro.ui \
-    menu.ui
+    servicoquarto.ui \
+    remove_atualiza.ui \
+    busca.ui \
+    atualiza.ui \
+    confirma_remove.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -28,20 +28,20 @@ public:
     QWidget *layoutWidget;
     QFormLayout *formLayout_3;
     QLabel *label_4;
-    QRadioButton *radioButton_5;
-    QRadioButton *radioButton_6;
-    QRadioButton *radioButton_7;
-    QRadioButton *radioButton_8;
+    QRadioButton *radNomeRA;
+    QRadioButton *radCpfRA;
+    QRadioButton *radTelRA;
+    QRadioButton *radDatanascRA;
     QLabel *label_5;
-    QPlainTextEdit *plainTextEdit_2;
+    QPlainTextEdit *txtCriterioRA;
     QWidget *layoutWidget_2;
     QGridLayout *gridLayout_2;
     QLabel *label_6;
-    QTextBrowser *textBrowser_2;
-    QPushButton *pushButton;
+    QTextBrowser *txtResultadoRA;
+    QPushButton *btnBuscarRA;
     QLabel *label_7;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
+    QPushButton *btnAtualizarRA;
+    QPushButton *btnRemoverRA;
 
     void setupUi(QWidget *Form)
     {
@@ -59,37 +59,37 @@ public:
 
         formLayout_3->setWidget(0, QFormLayout::LabelRole, label_4);
 
-        radioButton_5 = new QRadioButton(layoutWidget);
-        radioButton_5->setObjectName(QStringLiteral("radioButton_5"));
+        radNomeRA = new QRadioButton(layoutWidget);
+        radNomeRA->setObjectName(QStringLiteral("radNomeRA"));
 
-        formLayout_3->setWidget(1, QFormLayout::LabelRole, radioButton_5);
+        formLayout_3->setWidget(1, QFormLayout::LabelRole, radNomeRA);
 
-        radioButton_6 = new QRadioButton(layoutWidget);
-        radioButton_6->setObjectName(QStringLiteral("radioButton_6"));
+        radCpfRA = new QRadioButton(layoutWidget);
+        radCpfRA->setObjectName(QStringLiteral("radCpfRA"));
 
-        formLayout_3->setWidget(2, QFormLayout::LabelRole, radioButton_6);
+        formLayout_3->setWidget(2, QFormLayout::LabelRole, radCpfRA);
 
-        radioButton_7 = new QRadioButton(layoutWidget);
-        radioButton_7->setObjectName(QStringLiteral("radioButton_7"));
+        radTelRA = new QRadioButton(layoutWidget);
+        radTelRA->setObjectName(QStringLiteral("radTelRA"));
 
-        formLayout_3->setWidget(3, QFormLayout::LabelRole, radioButton_7);
+        formLayout_3->setWidget(3, QFormLayout::LabelRole, radTelRA);
 
-        radioButton_8 = new QRadioButton(layoutWidget);
-        radioButton_8->setObjectName(QStringLiteral("radioButton_8"));
+        radDatanascRA = new QRadioButton(layoutWidget);
+        radDatanascRA->setObjectName(QStringLiteral("radDatanascRA"));
 
-        formLayout_3->setWidget(4, QFormLayout::LabelRole, radioButton_8);
+        formLayout_3->setWidget(4, QFormLayout::LabelRole, radDatanascRA);
 
         label_5 = new QLabel(layoutWidget);
         label_5->setObjectName(QStringLiteral("label_5"));
 
         formLayout_3->setWidget(5, QFormLayout::LabelRole, label_5);
 
-        plainTextEdit_2 = new QPlainTextEdit(layoutWidget);
-        plainTextEdit_2->setObjectName(QStringLiteral("plainTextEdit_2"));
-        plainTextEdit_2->setMinimumSize(QSize(0, 24));
-        plainTextEdit_2->setMaximumSize(QSize(16777215, 24));
+        txtCriterioRA = new QPlainTextEdit(layoutWidget);
+        txtCriterioRA->setObjectName(QStringLiteral("txtCriterioRA"));
+        txtCriterioRA->setMinimumSize(QSize(0, 24));
+        txtCriterioRA->setMaximumSize(QSize(16777215, 24));
 
-        formLayout_3->setWidget(6, QFormLayout::LabelRole, plainTextEdit_2);
+        formLayout_3->setWidget(6, QFormLayout::LabelRole, txtCriterioRA);
 
         layoutWidget_2 = new QWidget(Form);
         layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
@@ -102,23 +102,23 @@ public:
 
         gridLayout_2->addWidget(label_6, 0, 0, 1, 1);
 
-        textBrowser_2 = new QTextBrowser(layoutWidget_2);
-        textBrowser_2->setObjectName(QStringLiteral("textBrowser_2"));
+        txtResultadoRA = new QTextBrowser(layoutWidget_2);
+        txtResultadoRA->setObjectName(QStringLiteral("txtResultadoRA"));
 
-        gridLayout_2->addWidget(textBrowser_2, 1, 0, 1, 1);
+        gridLayout_2->addWidget(txtResultadoRA, 1, 0, 1, 1);
 
-        pushButton = new QPushButton(Form);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(100, 180, 80, 21));
+        btnBuscarRA = new QPushButton(Form);
+        btnBuscarRA->setObjectName(QStringLiteral("btnBuscarRA"));
+        btnBuscarRA->setGeometry(QRect(100, 180, 80, 21));
         label_7 = new QLabel(Form);
         label_7->setObjectName(QStringLiteral("label_7"));
         label_7->setGeometry(QRect(70, 430, 141, 16));
-        pushButton_2 = new QPushButton(Form);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(20, 450, 111, 21));
-        pushButton_3 = new QPushButton(Form);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(150, 450, 111, 21));
+        btnAtualizarRA = new QPushButton(Form);
+        btnAtualizarRA->setObjectName(QStringLiteral("btnAtualizarRA"));
+        btnAtualizarRA->setGeometry(QRect(20, 450, 111, 21));
+        btnRemoverRA = new QPushButton(Form);
+        btnRemoverRA->setObjectName(QStringLiteral("btnRemoverRA"));
+        btnRemoverRA->setGeometry(QRect(150, 450, 111, 21));
 
         retranslateUi(Form);
 
@@ -129,16 +129,16 @@ public:
     {
         Form->setWindowTitle(QApplication::translate("Form", "Form", nullptr));
         label_4->setText(QApplication::translate("Form", "Deseja pesquisar por:", nullptr));
-        radioButton_5->setText(QApplication::translate("Form", "Nome", nullptr));
-        radioButton_6->setText(QApplication::translate("Form", "CPF", nullptr));
-        radioButton_7->setText(QApplication::translate("Form", "Telefone", nullptr));
-        radioButton_8->setText(QApplication::translate("Form", "Data de Nascimento", nullptr));
+        radNomeRA->setText(QApplication::translate("Form", "Nome", nullptr));
+        radCpfRA->setText(QApplication::translate("Form", "CPF", nullptr));
+        radTelRA->setText(QApplication::translate("Form", "Telefone", nullptr));
+        radDatanascRA->setText(QApplication::translate("Form", "Data de Nascimento", nullptr));
         label_5->setText(QApplication::translate("Form", "Digite o crit\303\251rio da pesquisa:", nullptr));
         label_6->setText(QApplication::translate("Form", "Resultado Encontrado:", nullptr));
-        pushButton->setText(QApplication::translate("Form", "Buscar", nullptr));
+        btnBuscarRA->setText(QApplication::translate("Form", "Buscar", nullptr));
         label_7->setText(QApplication::translate("Form", "Qual opera\303\247\303\243o deseja fazer:", nullptr));
-        pushButton_2->setText(QApplication::translate("Form", "Atualizar cadastro", nullptr));
-        pushButton_3->setText(QApplication::translate("Form", "Remover cadastro", nullptr));
+        btnAtualizarRA->setText(QApplication::translate("Form", "Atualizar cadastro", nullptr));
+        btnRemoverRA->setText(QApplication::translate("Form", "Remover cadastro", nullptr));
     } // retranslateUi
 
 };
