@@ -15,6 +15,9 @@ public:
     explicit cadastro(QWidget *parent = nullptr);
     ~cadastro();
 
+private slots:
+    void on_btnCadastrar_clicked();
+
 private:
     Ui::cadastro *ui;
 };
