@@ -2,6 +2,7 @@
 #define CADASTRADO_HPP
 #include <string>
 #include <iostream>
+using namespace std;
 
 class Cadastrado{
 
@@ -37,6 +38,8 @@ class Cadastrado{
         void setCheckOut(const string &value);
 
 
+        int getTelefone() const;
+        void setTelefone(int value);
 };
 
 #endif // CADASTRADO_HPP
@@ -79,6 +82,16 @@ return CheckOut;
 void Cadastrado::setCheckOut(const string &value)
 {
 CheckOut = value;
+}
+
+int Cadastrado::getTelefone() const
+{
+return Telefone;
+}
+
+void Cadastrado::setTelefone(int value)
+{
+Telefone = value;
 }
 
 string Cadastrado::getNome() const
