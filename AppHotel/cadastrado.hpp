@@ -3,7 +3,10 @@
 #include <string>
 #include <iostream>
 using namespace std;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 class Cadastrado{
 
     private:

@@ -7,7 +7,11 @@
 #include <QDateTime>
 #include <QMessageBox>
 
-QString local= "C:/Users/pietr/Desktop/projeto P1/Projeto-Hotel";
+
+//QString local= "C:/Users/pietr/Desktop/projeto P1/Projeto-Hotel";
+using namespace std;
+QString local= "C:/Users/Thomas/Documents/";
+
 QString nome = "Banco_de_dados.txt";
 
 cadastro::cadastro(QWidget *parent) :
@@ -22,9 +26,11 @@ cadastro::~cadastro()
     delete ui;
 }
 
+
 void cadastro::on_btnCadastrar_clicked(){
+
     QFile arquivo(local+nome);
-    if(!arquivo.open(QFile::WriteOnly|QFile::Text)){
+    if(!arquivo.open(QFile::Append|QFile::Text)){
         QMessageBox::warning(this,"ERRO", "Erro ao abrir no arquivo");
     }
 
@@ -43,5 +49,10 @@ void cadastro::on_btnCadastrar_clicked(){
 
     arquivo.flush();
     arquivo.close();
-
+    ui->txtNome->clear();
+    ui->txtCpf->clear();
+    ui->txtTel->clear();
+    ui->dateNasci->clear();
+    ui->dateTimeChin->clear();
+    ui->dateTimeChout->clear();
 }

@@ -15,6 +15,9 @@ public:
     explicit busca(QWidget *parent = nullptr);
     ~busca();
 
+private slots:
+    void on_btnBuscar_clicked();
+
 private:
     Ui::busca *ui;
 };
