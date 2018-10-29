@@ -8,9 +8,9 @@
 #include <QMessageBox>
 
 
-//QString local= "C:/Users/pietr/Desktop/projeto P1/Projeto-Hotel";
+QString local= "C:/Users/pietr/Desktop/projeto P1/Projeto-Hotel";
 using namespace std;
-QString local= "C:/Users/Thomas/Documents/";
+//QString local= "C:/Users/Thomas/Documents/";
 
 QString nome = "Banco_de_dados.txt";
 
@@ -45,7 +45,7 @@ void cadastro::on_btnCadastrar_clicked(){
     QString chouT = ui->dateTimeChout->time().toString();
 
 
-    saida << nnome <<" "<< ccpf <<" "<< ttel <<" "<< dtnasc <<" "<< chin <<" "<< chinT <<" "<< chou<<" "<< chouT;
+    saida << nnome <<" "<< ccpf <<" "<< ttel <<" "<< dtnasc <<" "<< chin <<" "<< chinT <<" "<< chou<<" "<< chouT <<endl;
 
     arquivo.flush();
     arquivo.close();
