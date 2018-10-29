@@ -46,7 +46,9 @@ HEADERS += \
     remove_atualiza.hpp \
     busca.hpp \
     atualiza.hpp \
-    confirma_remove.hpp
+    confirma_remove.hpp \
+    no.hpp \
+    arv.hpp
 
 FORMS += \
         mainwindow.ui \
