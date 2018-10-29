@@ -43,7 +43,7 @@ class Arv{
 			if(atual->dir){
 				w++;
 			}
-			return w;
+            return w;
 		}
 
 		No<T>* antecessor(No<T>* n){
@@ -69,7 +69,7 @@ class Arv{
 			else{
 				return &(pai->esq);
 			}
-		}
+        }
 
 		bool insere(T cont){
 

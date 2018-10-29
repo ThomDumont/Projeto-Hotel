@@ -20,7 +20,7 @@ class No{
 		}
 
 
-		friend class Arv<T>;
+        friend class Arv<T>;
 };
 
 
