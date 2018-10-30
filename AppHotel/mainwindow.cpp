@@ -17,7 +17,6 @@ MainWindow::MainWindow(QWidget *parent) :
 }
 
 MainWindow::~MainWindow(){
-
     QFile *arquivo;
     QTextStream stream;
 
@@ -32,6 +31,7 @@ MainWindow::~MainWindow(){
     for(int i = 0;i<v.tamanho();i++){
         stream<<v.em(i)<<endl;
     }
+    arquivo->close();
 
     delete ui;
 }

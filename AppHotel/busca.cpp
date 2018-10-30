@@ -21,7 +21,6 @@ busca::~busca(){
 
 void busca::on_btnBuscar_clicked()
 {
-    //ui->txtResultado->setPlainText();
 
     QFile arquivo("Banco de Dados.txt");
     if(arquivo.open(QFile::ReadOnly|QFile::Text)){

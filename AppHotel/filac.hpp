@@ -8,8 +8,8 @@ template <typename T>
 class FilaC{
     private:
         T V[MAX+1];
-        int f;
         int i;
+        int f;
 
     public:
     FilaC() : i(0), f(0){
@@ -45,6 +45,46 @@ class FilaC{
         std::cout<<std::endl;
     }
 
+    int tamanho(){
+        return MAX+1;
+    }
+
+    int at(int i){
+        return V[i];
+    }
+
+    int getF() const;
+    void setF(int value);
+    int getI() const;
+    void setI(int value);
 };
 
 #endif // FILAC_HPP
+
+template <typename T>
+
+int FilaC<T>::getI() const
+{
+    return i;
+}
+
+template <typename T>
+
+void FilaC<T>::setI(int value)
+{
+    i = value;
+}
+
+template <typename T>
+
+int FilaC<T>::getF() const
+{
+    return f;
+}
+
+template <typename T>
+
+void FilaC<T>::setF(int value)
+{
+    f = value;
+}

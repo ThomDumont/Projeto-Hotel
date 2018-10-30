@@ -14,6 +14,12 @@ class servicoquarto : public QDialog
 public:
     explicit servicoquarto(QWidget *parent = nullptr);
     ~servicoquarto();
+    FilaC<int> LeFila();
+
+private slots:
+    void on_btnAddfi_clicked();
+
+    void on_btnExfi_clicked();
 
 private:
     Ui::servicoquarto *ui;
