@@ -20,8 +20,7 @@ private slots:
 
 private:
     Ui::cadastro *ui;
-    QFile *arquivo;
-    QTextStream stream;
+
 };
 
 #endif // CADASTRO_HPP

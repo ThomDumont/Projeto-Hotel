@@ -1,8 +1,8 @@
 #ifndef BUSCA_HPP
 #define BUSCA_HPP
-
 #include <QDialog>
 #include <QtCore>
+
 namespace Ui {
 class busca;
 
@@ -22,8 +22,8 @@ private slots:
 
 private:
     Ui::busca *ui;
-    QFile *arquivo;
-    QTextStream stream;
+    //QFile *arquivo;
+    //QTextStream stream;
 
 };
 

@@ -1,7 +1,7 @@
 #include <iostream>
 #ifndef FILAC_HPP
 #define FILAC_HPP
-#define MAX 7
+#define MAX 10
 
 template <typename T>
 

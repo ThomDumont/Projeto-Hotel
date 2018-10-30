@@ -1,6 +1,6 @@
 #ifndef SERVICOQUARTO_HPP
 #define SERVICOQUARTO_HPP
-
+#include "filac.hpp"
 #include <QDialog>
 
 namespace Ui {
@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::servicoquarto *ui;
+    FilaC<int> serv;
 };
 
 #endif // SERVICOQUARTO_HPP

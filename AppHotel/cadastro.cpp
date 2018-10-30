@@ -5,6 +5,8 @@
 
 using namespace std;
 
+static QFile *arquivo;
+static QTextStream stream;
 
 cadastro::cadastro(QWidget *parent) :
     QDialog(parent),

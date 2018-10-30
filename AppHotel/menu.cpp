@@ -7,13 +7,11 @@
 
 menu::menu(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::menu)
-{
+    ui(new Ui::menu){
     ui->setupUi(this);
 }
 
-menu::~menu()
-{
+menu::~menu(){
     delete ui;
 }
 

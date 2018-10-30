@@ -34,7 +34,7 @@ class LES {
             return true;
         }
 
-        int busca(T valor){
+        bool busca(T valor){
             int i = 0;
 
             while(i != n && ve[i]!=valor){
@@ -42,13 +42,15 @@ class LES {
             }
 
             if(i==n){
-                ;
+                return false;
             }
             else{
-                return i;
+                return true;
             }
 
         }
+
+
 
         bool remove(T valor){
 
@@ -71,6 +73,10 @@ class LES {
             return n;
         }
 
+        T em(int i){
+            return ve[i];
+        }
+
         void imprime(){
             int i;
             for(i=0;i<n;i++){
@@ -81,4 +87,4 @@ class LES {
 
 };
 
-#endif // LES_HPP
+#endif //LES_HPP
