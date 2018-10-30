@@ -2,9 +2,11 @@
 #define BUSCA_HPP
 
 #include <QDialog>
-
+#include <QtCore>
 namespace Ui {
 class busca;
+
+
 }
 
 class busca : public QDialog
@@ -20,6 +22,9 @@ private slots:
 
 private:
     Ui::busca *ui;
+    QFile *arquivo;
+    QTextStream stream;
+
 };
 
 #endif // BUSCA_HPP

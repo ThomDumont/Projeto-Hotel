@@ -2,7 +2,7 @@
 #define CADASTRO_HPP
 
 #include <QDialog>
-
+#include <QtCore>
 namespace Ui {
 class cadastro;
 }
@@ -20,6 +20,8 @@ private slots:
 
 private:
     Ui::cadastro *ui;
+    QFile *arquivo;
+    QTextStream stream;
 };
 
 #endif // CADASTRO_HPP

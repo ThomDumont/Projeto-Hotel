@@ -1,19 +1,8 @@
 #include "busca.hpp"
 #include "ui_busca.h"
-#include <QTextStream>
-#include <QMessageBox>
-#include <QFile>
-#include <QTextStream>
-#include <QDataStream>
-#include <QDateEdit>
-#include <QDateTime>
 #include <QMessageBox>
 
 
-
-QString lugar= "C:/Users/pietr/Desktop/projeto P1/Projeto-Hotel";
-//QString lugar= "C:/Users/Thomas/Documents/";
-QString nomencl = "Banco_de_dados.txt";
 
 using namespace std;
 busca::busca(QWidget *parent) :
@@ -21,6 +10,8 @@ busca::busca(QWidget *parent) :
     ui(new Ui::busca)
 {
     ui->setupUi(this);
+    arquivo = new QFile("Banco de Dados123.txt");
+
 }
 
 busca::~busca(){
@@ -29,8 +20,9 @@ busca::~busca(){
 
 void busca::on_btnBuscar_clicked()
 {
-    QFile arquivo(lugar+nomencl);
-    if(!arquivo.open(QFile::ReadOnly|QFile::Text)){
+    //ui->txtResultado->setPlainText();
+
+    /*if(arquivo.open(QFile::ReadOnly|QFile::Text)){
         QMessageBox::warning(this,"ERRO","Erro ao abrir arquivo");
 
     }
@@ -52,7 +44,7 @@ void busca::on_btnBuscar_clicked()
     }
     else{
         ui->txtResultado->setPlainText(achado);
-    }
-    arquivo.close();
+    }*/
+    //arquivo->close();
 
 }

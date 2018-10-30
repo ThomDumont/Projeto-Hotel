@@ -1,24 +1,22 @@
 #include "cadastro.hpp"
 #include "ui_cadastro.h"
-#include <QFile>
-#include <QTextStream>
-#include <QDataStream>
-#include <QDateEdit>
-#include <QDateTime>
 #include <QMessageBox>
 
 
-QString local= "C:/Users/pietr/Desktop/projeto P1/Projeto-Hotel";
 using namespace std;
-//QString local= "C:/Users/Thomas/Documents/";
 
-QString nome = "Banco_de_dados.txt";
 
 cadastro::cadastro(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::cadastro)
 {
     ui->setupUi(this);
+    arquivo = new QFile("Banco de dados.txt");
+    if(arquivo->open(QIODevice::ReadWrite|QIODevice::Append|QFile::Text)){
+           stream.setDevice(arquivo);
+    }else{
+         QMessageBox::warning(this,"ERRO", "Erro ao abrir no arquivo");
+    }
 }
 
 cadastro::~cadastro()
@@ -29,12 +27,7 @@ cadastro::~cadastro()
 
 void cadastro::on_btnCadastrar_clicked(){
 
-    QFile arquivo(local+nome);
-    if(!arquivo.open(QFile::Append|QFile::Text)){
-        QMessageBox::warning(this,"ERRO", "Erro ao abrir no arquivo");
-    }
 
-    QTextStream saida(&arquivo);
     QString nnome = ui->txtNome->toPlainText();
     QString ccpf = ui->txtCpf->toPlainText();
     QString ttel = ui->txtTel->toPlainText();
@@ -45,10 +38,10 @@ void cadastro::on_btnCadastrar_clicked(){
     QString chouT = ui->dateTimeChout->time().toString();
 
 
-    saida << nnome <<" "<< ccpf <<" "<< ttel <<" "<< dtnasc <<" "<< chin <<" "<< chinT <<" "<< chou<<" "<< chouT <<endl;
+    stream << nnome <<" "<< ccpf <<" "<< ttel <<" "<< dtnasc <<" "<< chin <<" "<< chinT <<" "<< chou<<" "<< chouT <<"  "<<endl;
 
-    arquivo.flush();
-    arquivo.close();
+    arquivo->flush();
+    arquivo->close();
     ui->txtNome->clear();
     ui->txtCpf->clear();
     ui->txtTel->clear();
