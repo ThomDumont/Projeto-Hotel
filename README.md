@@ -21,4 +21,4 @@ Instruçoes para a execução do projeto:
   Os arquivos vão ser gerados na pasta do executavel do projeto.  
   
 Feito por:
-Thomas Dumont das Neves e Pietro Montoro Rigetto
+Thomas Dumont das Neves e Pietro Montoro Rigetto.
