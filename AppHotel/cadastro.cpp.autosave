@@ -17,7 +17,7 @@ cadastro::cadastro(QWidget *parent) :
     ui(new Ui::cadastro){
     ui->setupUi(this);
 
-    v = LeArv();
+    v = LeArv();   
 
 }
 
@@ -30,14 +30,15 @@ cadastro::~cadastro(){
          QMessageBox::warning(this,"ERRO", "Erro ao abrir no arquivo");
     }
 
-    redw(v.getRaiz());
-
+    red(v.getRaiz());
+    
+    arquivo->close();
+    
     delete ui;
 }
 
 
 void cadastro::on_btnCadastrar_clicked(){
-
 
     QString nnome = ui->txtNome->toPlainText();
     QString ccpf = ui->txtCpf->toPlainText();
@@ -49,6 +50,8 @@ void cadastro::on_btnCadastrar_clicked(){
     Cadastrado n(nnome,ccpf,chin,chou);
 
     v.insere(n);
+    
+    emit mandaArv(&v);
 
     ui->txtNome->clear();
     ui->txtCpf->clear();
@@ -75,17 +78,18 @@ Arv<Cadastrado> cadastro::LeArv(){
         Cadastrado n(w.at(0),w.at(1),w.at(4),w.at(5));
         q.insere(n);
     }
-
+    
     arquivo.close();
     return q;
 }
 
-void cadastro::redw(No<Cadastrado>* r){
+void cadastro::red(No<Cadastrado>* r){
     if(r){
-        stream<<r->getValor().Nome<<";"<<r->getValor().Cpf
+        stream<<r->getValor().Nome<<";"<<r->getValor().Cpf<<";"
              <<r->getValor().CheckIn<<";"<<r->getValor().CheckOut<<";"<<endl;
-        redw(r->esq);
-        redw(r->dir);
+        red(r->esq);
+        red(r->dir);
     }
 }
+
 

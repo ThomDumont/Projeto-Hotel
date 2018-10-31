@@ -30,9 +30,6 @@ SOURCES += \
     menu.cpp \
     cadastro.cpp \
     servicoquarto.cpp \
-    remove_atualiza.cpp \
-    busca.cpp \
-    atualiza.cpp \
     confirma_remove.cpp
 
 HEADERS += \
@@ -43,9 +40,6 @@ HEADERS += \
     menu.hpp \
     cadastro.hpp \
     servicoquarto.hpp \
-    remove_atualiza.hpp \
-    busca.hpp \
-    atualiza.hpp \
     confirma_remove.hpp \
     no.hpp \
     arv.hpp
@@ -55,9 +49,6 @@ FORMS += \
     menu.ui \
     cadastro.ui \
     servicoquarto.ui \
-    remove_atualiza.ui \
-    busca.ui \
-    atualiza.ui \
     confirma_remove.ui
 
 # Default rules for deployment.

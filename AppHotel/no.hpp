@@ -7,7 +7,7 @@ class Arv;
 
 template <typename T>
 class No{
-	private:
+    public:
 		T Valor;
 		No<T>* pai;
 		No<T>* esq;
@@ -21,7 +21,9 @@ class No{
 
 
         friend class Arv<T>;
+        friend class cadastro;
 };
 
 
 #endif
+

@@ -8,7 +8,7 @@ using namespace std;
 
 template <typename T>
 class Arv{
-	private:
+    protected:
 
 		No<T>* raiz;
 		int nrs;

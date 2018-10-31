@@ -2,6 +2,8 @@
 #define BUSCA_HPP
 #include <QDialog>
 #include <QtCore>
+#include "arv.hpp"
+#include "cadastrado.hpp"
 
 namespace Ui {
 class busca;
@@ -19,11 +21,11 @@ public:
 
 private slots:
     void on_btnBuscar_clicked();
+    void recebeArv(Arv<Cadastrado>* w);
 
 private:
     Ui::busca *ui;
-    //QFile *arquivo;
-    //QTextStream stream;
+    Arv<Cadastrado>* v;
 
 };
 

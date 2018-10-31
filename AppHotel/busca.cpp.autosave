@@ -8,10 +8,9 @@ using namespace std;
 
 busca::busca(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::busca)
-{
+    ui(new Ui::busca){
     ui->setupUi(this);
-    //arquivo = new QFile("Banco de Dados123.txt");
+    connect()
 
 }
 
@@ -19,8 +18,7 @@ busca::~busca(){
     delete ui;
 }
 
-void busca::on_btnBuscar_clicked()
-{
+void busca::on_btnBuscar_clicked(){
 
     QFile arquivo("Banco de Dados.txt");
     if(arquivo.open(QFile::ReadOnly|QFile::Text)){
@@ -47,3 +45,9 @@ void busca::on_btnBuscar_clicked()
     arquivo.close();
 
 }
+
+void busca::recebeArv(Arv<Cadastrado>* w){
+    v = w;
+}
+
+
