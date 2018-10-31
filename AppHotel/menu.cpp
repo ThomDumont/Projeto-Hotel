@@ -2,8 +2,7 @@
 #include "ui_menu.h"
 #include "cadastro.hpp"
 #include "servicoquarto.hpp"
-#include "remove_atualiza.hpp"
-#include "busca.hpp"
+
 
 menu::menu(QWidget *parent) :
     QDialog(parent),
@@ -25,12 +24,3 @@ void menu::on_btnServiQuMenu_clicked(){
     x->show();
 }
 
-void menu::on_btnRemAtu_clicked(){
-    remove_atualiza *x = new remove_atualiza(this);
-    x->show();
-}
-
-void menu::on_btnBuscMenu_clicked(){
-    busca *x = new busca(this);
-    x->show();
-}

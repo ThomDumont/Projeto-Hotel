@@ -17,12 +17,20 @@ public:
     explicit cadastro(QWidget *parent = nullptr);
     ~cadastro();
     Arv<Cadastrado> LeArv();
-    //void red(Arv<Cadastrado> r);
-    void redw(No<Cadastrado>* r);
+    void red(No<Cadastrado>* r);
 
 
 private slots:
     void on_btnCadastrar_clicked();
+    
+    void on_btnBusca_clicked();
+
+    void on_btnRemove_clicked();
+
+    void on_btnAtualiza_clicked();
+
+signals:
+    void mandaArv(Arv<Cadastrado>* v);
 
 private:
     Ui::cadastro *ui;

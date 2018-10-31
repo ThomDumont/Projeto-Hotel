@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>125</width>
-    <height>179</height>
+    <width>245</width>
+    <height>140</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,9 +16,9 @@
   <widget class="QPushButton" name="btnServiQuMenu">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>140</y>
-     <width>101</width>
+     <x>70</x>
+     <y>90</y>
+     <width>111</width>
      <height>23</height>
     </rect>
    </property>
@@ -29,46 +29,20 @@
   <widget class="QPushButton" name="btnCadasMenu">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>70</x>
      <y>50</y>
-     <width>101</width>
+     <width>111</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Cadastrar</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnBuscMenu">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>80</y>
-     <width>101</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Buscar</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnRemAtu">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>110</y>
-     <width>101</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Remover/Atualizar</string>
+    <string>Central dos Clientes</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>110</x>
      <y>20</y>
      <width>47</width>
      <height>13</height>

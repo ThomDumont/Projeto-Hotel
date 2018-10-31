@@ -30,7 +30,7 @@ cadastro::~cadastro(){
          QMessageBox::warning(this,"ERRO", "Erro ao abrir no arquivo");
     }
 
-    redw(v.getRaiz());
+    red(v.getRaiz());
 
     delete ui;
 }
@@ -80,12 +80,25 @@ Arv<Cadastrado> cadastro::LeArv(){
     return q;
 }
 
-void cadastro::redw(No<Cadastrado>* r){
+void cadastro::red(No<Cadastrado>* r){
     if(r){
         stream<<r->getValor().Nome<<";"<<r->getValor().Cpf
              <<r->getValor().CheckIn<<";"<<r->getValor().CheckOut<<";"<<endl;
-        redw(r->esq);
-        redw(r->dir);
+        red(r->esq);
+        red(r->dir);
     }
 }
 
+
+void cadastro::on_btnBusca_clicked(){
+    QString CpfB = ui-> ;
+
+}
+
+void cadastro::on_btnRemove_clicked(){
+
+}
+
+void cadastro::on_btnAtualiza_clicked(){
+
+    }

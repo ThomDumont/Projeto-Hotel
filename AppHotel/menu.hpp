@@ -20,10 +20,6 @@ private slots:
 
     void on_btnServiQuMenu_clicked();
 
-    void on_btnRemAtu_clicked();
-
-    void on_btnBuscMenu_clicked();
-
 private:
     Ui::menu *ui;
 };
