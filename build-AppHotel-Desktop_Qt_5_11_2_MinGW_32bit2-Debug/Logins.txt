@@ -1,7 +1,0 @@
-aaa;aaa;
-admin;admin;
-bbb;bbb
-func1;func1;
-guilherme;guilherme;
-pietro;pietro;
-user;senha;

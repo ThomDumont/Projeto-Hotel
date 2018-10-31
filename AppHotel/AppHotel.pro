@@ -29,8 +29,7 @@ SOURCES += \
         mainwindow.cpp \
     menu.cpp \
     cadastro.cpp \
-    servicoquarto.cpp \
-    confirma_remove.cpp
+    servicoquarto.cpp
 
 HEADERS += \
     cadastrado.hpp \
@@ -40,7 +39,6 @@ HEADERS += \
     menu.hpp \
     cadastro.hpp \
     servicoquarto.hpp \
-    confirma_remove.hpp \
     no.hpp \
     arv.hpp
 
@@ -48,8 +46,7 @@ FORMS += \
         mainwindow.ui \
     menu.ui \
     cadastro.ui \
-    servicoquarto.ui \
-    confirma_remove.ui
+    servicoquarto.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

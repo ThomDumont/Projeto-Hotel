@@ -10,21 +10,43 @@ class Cadastrado{
 
         QString Nome;
         QString Cpf;
+        QString Telefon;
+        QString DataNasc;
         QString CheckIn;
         QString CheckOut;
 
 
     public:
 
-        Cadastrado(QString n, QString c, QString ci, QString co){
+        Cadastrado(QString n){
+            Cpf = n;
+        }
+
+        Cadastrado(QString n, QString c,QString t,QString dn, QString ci, QString co){
             Nome = n;
             Cpf = c;
+            Telefon = t;
+            DataNasc = dn;
             CheckIn = ci;
             CheckOut = co;
         }
 
         bool operator<=(Cadastrado n){
             if(Cpf <= n.Cpf){
+                return true;
+            }
+            return false;
+        }
+
+        bool operator !=(Cadastrado n){
+            if(Cpf != n.Cpf){
+                return true;
+            }
+            return false;
+        }
+
+        bool operator <(Cadastrado n){
+            if(Cpf < n.Cpf){
                 return true;
             }
             return false;
