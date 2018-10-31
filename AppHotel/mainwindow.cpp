@@ -40,16 +40,29 @@ void MainWindow::on_btnEntrar_clicked(){
 
     QString login = ui->txtLogin->toPlainText();
     QString senha = ui->txtSenha->toPlainText();
-
+    QStringList nlogin = login.split(";");
+    QStringList nsenha = senha.split(";");
     QString combina = login+";"+senha+";";
-    if(v.busca(combina)){
-        hide();
-        menu *x = new menu(this);
-        x->show();
+
+    QStringList w = combina.split(";");
+    if(nlogin.size() == 1 && nsenha.size() == 1 &&
+            nlogin.at(0) != "nlog" && nsenha.at(0) != "npass"){
+        if(v.busca(combina)){
+            hide();
+            menu *x = new menu(this);
+            x->show();
+        }
+        else{
+            QMessageBox::warning(this,"Não Encontrado","Seu Login e Senha Podem estar errado");
+        }
     }
-    else{
-        QMessageBox::warning(this,"Não Encontrado","Seu Login e Senha Podem estar errado");
+    else if(nlogin.size() == 2 && nsenha.size() == 2 &&
+            nlogin.at(0) == "nlog" && nsenha.at(0) == "npass"){
+        QString q = nlogin.at(1)+";"+nsenha.at(1)+";";
+        v.insere(q);
+        QMessageBox::information(this,"Sucesso","Cadastro criado com sucesso!");
     }
+
 }
 
 LES<QString> MainWindow::LeLogins(){

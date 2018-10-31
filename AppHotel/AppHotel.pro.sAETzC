@@ -39,6 +39,7 @@ HEADERS += \
     menu.hpp \
     cadastro.hpp \
     servicoquarto.hpp \
+    confirma_remove.hpp \
     no.hpp \
     arv.hpp
 

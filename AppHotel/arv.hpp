@@ -54,10 +54,8 @@ class Arv{
 			
 			while(atual->dir) {
 				atual = atual->dir;
-				cout<<atual->Valor<<endl;
 			}
-			
-			//cout<<atual->Valor<<endl;
+
 			return atual;
 		}
 
@@ -104,9 +102,9 @@ class Arv{
 					ante->dir = n;
 				}
 			}
+
 			nrs++;
 
-			//cout<<"inserindo e balanceando o "<<cont<<endl;
 			balanceie(n);
 			return true;
 		}
@@ -124,7 +122,7 @@ class Arv{
 
 			while(atual){
 				ante = atual;
-				if(atual->Valor != valor){
+                if(valor != atual->Valor){
 					if(valor < atual->Valor ){
 						atual = atual->esq;
 					}
@@ -136,7 +134,7 @@ class Arv{
 					break;
 				}
 			}
-			return ante;
+            return ante;
 		}
 
 		int altura(No<T>* n){
@@ -151,7 +149,6 @@ class Arv{
 		}
 
 		void right(No<T>* atual){
-			//cout<<"rodando direita"<<endl;
 			No<T>* x = atual;
 			No<T>* y = x->esq;
 			No<T>* b = y->dir;
@@ -179,7 +176,6 @@ class Arv{
 		}
 
 		void left(No<T>* atual){
-            //cout<<"rodando esquerda"<<endl;
 			No<T>* x = atual;
 			No<T>* y = x->dir;
 			No<T>* b = y->esq;
@@ -208,7 +204,6 @@ class Arv{
 
 		void remove (No<T>* atual){
 			int f = nFilhos(atual);
-			//cout<<f<<endl;
 			if(f == 0){
 				
 				*achaPai(atual) = NULL;
